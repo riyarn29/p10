@@ -13,16 +13,16 @@ import com.rays.common.BaseDTO;
 @Table(name = "st_client")
 public class ClientDTO extends BaseDTO  {
 
-	@Column(name = "FULL_NAME")
+	@Column(name = "FULL_NAME" , length=20)
 	private String fullName;
 
-	@Column(name = "ILLNESS")
+	@Column(name = "ILLNESS" , length=20)
 	private String illness ;
 
 	@Column(name = "APPOINTMENT_DATE")
 	private Date appointmentDate;
 
-	@Column(name = "PHONE")
+	@Column(name = "PHONE" , length=10)
 	private Long phone ;
 	
 	@Column(name = "ORG_NAME", length = 50)
